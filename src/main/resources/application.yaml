@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            clientId: 3nnbdmm43ckn0uf8joso0r2i7v
+            clientSecret: cqhtetj1drqnl6c5e8ql7g7qs1u0m98to6g0spf3d4urfs4tsak
+            scope: openid
+            redirect-uri: http://localhost:8080/login/oauth2/code/cognito
+            clientName: oauth-poc
+        provider:
+          cognito:
+            issuerUri: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_01sZmlqLX
+            user-name-attribute: cognito:username
